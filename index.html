@@ -13,30 +13,28 @@
     <main>
         <div class="board">
             <h3 class="title">A Fazer</h3>
-            <div class="board-card">
-                <ul class="card">
-                </ul>
-            </div>
+            <ul id="todo" class="card" ondrop="drop(event, this.id)" ondragover="over(event)">
+            </ul>
             <div class="add-card" onclick="addTask(this)">
                 <p>Adicionar tarefa</p>
             </div>
         </div>
         <div class="board">
             <h3 class="title">Fazendo</h3>
-            <div class="board-card">
-                <ul class="card">
-                                 </ul>
-            </div>
+            <ul id="doing" class="card" ondrop="drop(event, this.id)" ondragover="over(event)">
+                <!-- <li draggable="true" ondragstart="drag(event)">
+                    <p>coco</p>
+                    <p class="remove" onclick="remove(this)">🗑️</p>
+                </li> -->
+            </ul>
             <div class="add-card" onclick="addTask(this)">
                 <p>Adicionar tarefa</p>
             </div>
         </div>
         <div class="board">
             <h3 class="title">Feito</h3>
-            <div class="board-card">
-                <ul class="card">
-                </ul>
-            </div>
+            <ul id="done" class="card" ondrop="drop(event, this.id)" ondragover="over(event)">
+            </ul>
             <div class="add-card" onclick="addTask(this)">
                 <p>Adicionar tarefa</p>
             </div>
